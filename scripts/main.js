@@ -42,6 +42,9 @@ function setUserName() {
     localStorage.setItem("name", myName);
     myHeading.textContent = `Anime girls by ${myName}`;
   }
+    if (localStorage.getItem("name") === "Yuvin Marasini") {
+    myHeading.textContent = `You are the youngest person ever`;
+  }
 }
 if (localStorage.getItem("name") === "Yuvin Marasini") {
   myHeading.textContent = `You are the youngest person ever`;
@@ -57,3 +60,4 @@ myButton.addEventListener("click", () => {
     myHeading.textContent = `You are the youngest person ever`;
   }
 });
+
